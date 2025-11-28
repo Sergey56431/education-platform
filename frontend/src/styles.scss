@@ -35,7 +35,7 @@
 }
 
 .title {
-  @apply main-font-family text-[1rem] font-bold;
+  @apply font-(family-name:--custom-font-family) text-[1rem] font-bold;
 }
 
 .card-text {
