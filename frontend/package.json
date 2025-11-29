@@ -5,12 +5,14 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "eslint": "npx eslint",
     "watch": "ng build --watch --configuration development",
     "gen-api": "ng-openapi-gen --config ./src/app/core/api/openapi-gen.json",
     "test": "ng test"
   },
   "private": true,
   "dependencies": {
+    "@angular-eslint/eslint-plugin": "^21.0.1",
     "@angular/cdk": "^21.0.1",
     "@angular/common": "^21.0.1",
     "@angular/compiler": "^21.0.1",
@@ -35,14 +37,21 @@
     "@angular/build": "^21.0.1",
     "@angular/cli": "^21.0.1",
     "@angular/compiler-cli": "^21.0.1",
+    "@eslint/js": "^9.39.1",
+    "@stylistic/eslint-plugin": "^5.6.1",
     "@types/jasmine": "~5.1.0",
+    "eslint": "^9.39.1",
+    "eslint-plugin-angular": "^5.0.0",
+    "globals": "^16.5.0",
     "jasmine-core": "~5.7.0",
+    "jiti": "^2.6.1",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-openapi-gen": "^1.0.5",
-    "typescript": "~5.9.3"
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.48.0"
   }
 }

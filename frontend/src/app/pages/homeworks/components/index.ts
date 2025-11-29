@@ -1,1 +1,1 @@
-export * from './homeworks-page'
+export * from './homeworks-page';
