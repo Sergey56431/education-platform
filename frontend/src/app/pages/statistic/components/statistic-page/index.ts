@@ -1,1 +1,1 @@
-export * from './statistic-page'
+export * from './statistic-page';

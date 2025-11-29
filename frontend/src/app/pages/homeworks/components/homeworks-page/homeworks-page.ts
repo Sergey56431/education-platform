@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-homeworks-page',
   imports: [],
   templateUrl: './homeworks-page.html',
-  styleUrl: './homeworks-page.scss',
+  styleUrl: './homeworks-page.scss'
 })
 export class HomeworksPage {
 

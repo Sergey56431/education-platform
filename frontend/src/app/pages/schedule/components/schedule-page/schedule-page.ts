@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-schedule-page',
   imports: [],
   templateUrl: './schedule-page.html',
-  styleUrl: './schedule-page.scss',
+  styleUrl: './schedule-page.scss'
 })
 export class SchedulePage {
 

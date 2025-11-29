@@ -1,6 +1,6 @@
-import {Component} from '@angular/core';
-import {Header} from "@core/components";
-import {RouterOutlet} from '@angular/router';
+import { Component } from '@angular/core';
+import { Header } from '@core/components';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
@@ -9,7 +9,7 @@ import {RouterOutlet} from '@angular/router';
     RouterOutlet
   ],
   templateUrl: './layout.html',
-  styleUrl: './layout.scss',
+  styleUrl: './layout.scss'
 })
 export class Layout {
 
