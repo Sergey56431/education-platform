@@ -56,7 +56,7 @@
 }
 
 .active-route {
-  @apply bg-(--primary);
+  @apply bg-(--primary) text-white;
 }
 
 .route-links {

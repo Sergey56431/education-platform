@@ -9,18 +9,26 @@ export const routes: Routes = [
     path: '',
     loadComponent: () => import('./core').then(c => c.Layout),
     children: [
-      // {
-      //   path: 'courses',
-      // },
-      // {
-      //   path: 'homework'
-      // },
-      // {
-      //   path: 'schedule',
-      // },
-      // {
-      //   path: 'statistic',
-      // }
+      {
+        path: '',
+        loadComponent: () => import('./pages').then(c => c.MainPage)
+      },
+      {
+        path: 'courses',
+        loadComponent: () => import('./pages').then(c => c.CoursesPage)
+      },
+      {
+        path: 'homeworks',
+        loadComponent: () => import('./pages').then(c => c.HomeworksPage)
+      },
+      {
+        path: 'schedule',
+        loadComponent: () => import('./pages').then(c => c.SchedulePage)
+      },
+      {
+        path: 'statistic',
+        loadComponent: () => import('./pages').then(c => c.StatisticPage)
+      }
     ]
   },
   {
