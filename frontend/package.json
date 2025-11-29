@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "eslint": "npx eslint",
     "watch": "ng build --watch --configuration development",
     "gen-api": "ng-openapi-gen --config ./src/app/core/api/openapi-gen.json",
     "test": "ng test"
