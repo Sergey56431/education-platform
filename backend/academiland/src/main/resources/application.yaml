@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: academiland
+  datasource:
+    url: jdbc:postgresql://postgres:5432/academiland
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8080
