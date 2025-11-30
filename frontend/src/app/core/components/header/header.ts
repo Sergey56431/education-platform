@@ -4,9 +4,8 @@ import { Button } from 'primeng/button';
 import { BadgeDirective } from 'primeng/badge';
 import { MenuItem } from 'primeng/api';
 import { Menu } from 'primeng/menu';
-import {Popover} from 'primeng/popover';
-import {Divider} from 'primeng/divider';
-import {NotifyPopup} from '@core/components';
+import { Popover } from 'primeng/popover';
+import { NotifyPopup } from '@core/components';
 
 @Component({
   selector: 'app-header',
@@ -17,7 +16,6 @@ import {NotifyPopup} from '@core/components';
     BadgeDirective,
     Menu,
     Popover,
-    Divider,
     NotifyPopup
   ],
   templateUrl: './header.html',
