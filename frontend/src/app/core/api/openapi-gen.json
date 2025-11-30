@@ -1,10 +1,9 @@
 {
   "$schema": "./node_modules/ng-openapi-gen/ng-openapi-gen-schema.json",
-  "input": "http://acadeland.ru:8080/v3/api-docs",
+  "input": "http://94.45.222.59:8080/v3/api-docs",
   "output": "./src/app/core/api/openapi",
   "prefix": "EDUApi",
   "includeTags": [],
-  "module": "EDUApiModule",
   "configuration": "EDUApiConfiguration",
   "ignoreUnusedModels": true,
   "minParamsForContainer": 2,

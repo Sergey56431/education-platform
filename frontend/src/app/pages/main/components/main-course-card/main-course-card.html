@@ -1,0 +1,37 @@
+<div class="border border-(--card-border) rounded-(--insert-radius-course) p-5 bg-white">
+  <h2 class="font-semiBold text-2xl mb-5">Карточка доступных курсов</h2>
+  <div class="flex justify-between items-center lg:flex-row flex-col gap-5">
+    <div class="bg-(--light-card-bg) rounded-[12px] w-full p-5">
+      <h3 class="text-xl font-medium ">Андройд для начинающих</h3>
+
+      <div class="mt-4 flex flex-col gap-2">
+        <div class="flex justify-between items-center ">
+          <span class="text-(--pale-text) card-text">Прогресс</span>
+          <span class="text-(--pale-text) card-text">50% пройдено</span>
+        </div>
+        <p-progress-bar valueStyleClass="bg-(--accent)!" color="primary" [value]="50" [showValue]="true"/>
+        <div class="flex justify-between items-center ">
+          <span class="text-(--pale-text) card-text">2.1 Типы данных</span>
+          <a [routerLink]="['/courses']" [queryParams]="{id: 1}"
+             class="card-text text-(--primary) font-bold">Продолжить</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-(--light-card-bg) items-center rounded-[12px] w-full p-5">
+      <h3 class="text-xl font-medium ">Андройд для начинающих</h3>
+
+      <div class="mt-4 flex flex-col gap-2">
+        <div class="flex justify-between items-center ">
+          <span class="text-(--pale-text) card-text">Прогресс</span>
+          <span class="text-(--pale-text) card-text">20% пройдено</span>
+        </div>
+        <p-progress-bar valueStyleClass="bg-(--accent)!" color="primary" [value]="20" [showValue]="true"/>
+        <div class="flex justify-between items-center ">
+          <span class="text-(--pale-text) card-text">2.1 Типы данных</span>
+          <a [routerLink]="['/courses']" [queryParams]="{id: 1}" class="card-text text-(--primary) font-bold">Продолжить</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

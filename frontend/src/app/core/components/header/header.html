@@ -1,11 +1,11 @@
-<header class="py-3 bg-white border-b border-(--card-border)">
+<header class="py-3">
   <div class="px-8 flex justify-between items-center">
-    <a routerLink="/" class="flex items-center gap-2">
+    <a routerLink="/" class="flex items-center gap-2 py-1.5 px-2.5 bg-white rounded-lg">
       <div class="h-8 w-8 rounded-[8px] my-gradient"></div>
-      <div class="font-bold text-xl">EduPlatform</div>
+      <div class="font-bold text-xl">AcademyLand</div>
     </a>
 
-    <nav class="flex items-center gap-5">
+    <nav class="flex items-center gap-10">
       <a class="route-links" routerLink="/courses" routerLinkActive="active-route">Курсы</a>
       <a class="route-links" routerLink="/homeworks" routerLinkActive="active-route">Домашка</a>
       <a class="route-links" routerLink="/schedule" routerLinkActive="active-route">Расписание</a>
@@ -13,37 +13,24 @@
     </nav>
 
     <div class="flex items-center gap-2">
-      <button class="bg-(--accent) text-white cursor-pointer rounded-(--button-radius) px-4 py-2">+ Новый курс</button>
+      <p-button icon="pi pi-bell" [rounded]="true" size="large"
+                [text]="true" severity="secondary" pBadge
+                badgeSeverity="danger" badgeSize="small" badge="1"
+                (click)="op.toggle($event)"/>
+      <p-popover #op>
+        <app-notify-popup/>
+      </p-popover>
 
-      <div class="flex items-center gap-2 bg-(--chip-gray-bg) rounded-full p-2 hover:bg-(--chip-gray-bg-hover) cursor-pointer py-1.5 px-2.5">
+      <button (click)="menu.toggle($event)"
+              class="flex items-center gap-2 bg-(--chip-gray-bg) rounded-full p-2 hover:bg-(--chip-gray-bg-hover) cursor-pointer py-1.5 pl-2.5 pr-5">
         <div class="text-white bg-(--primary) rounded-full w-10 h-10 flex items-center justify-center">КЧ</div>
         <div class="profile-info">
           <div class="profile-name">Кирилл Черняев</div>
           <div class="text-(--pale-text)">Студент (4 курс)</div>
         </div>
-        <!--      <div class="profile-menu">-->
-        <!--        <div class="profile-menu-item">-->
-        <!--          <span class="icon">👤</span>-->
-        <!--          <span>Мой профиль</span>-->
-        <!--        </div>-->
-        <!--        <div class="profile-menu-item">-->
-        <!--          <span class="icon">⚙️</span>-->
-        <!--          <span>Настройки аккаунта</span>-->
-        <!--        </div>-->
-        <!--        <div class="profile-menu-item">-->
-        <!--          <span class="icon">🌙</span>-->
-        <!--          <span>Тёмная тема</span>-->
-        <!--        </div>-->
+      </button>
+      <p-menu [popup]="true" [model]="_menuItems()" #menu/>
 
-        <!--        <div class="profile-menu-separator"></div>-->
-
-        <!--        <div class="profile-menu-item">-->
-        <!--          <span class="icon">🚪</span>-->
-        <!--          <span>Выйти</span>-->
-        <!--        </div>-->
-        <!--      </div>-->
-        <!--    </div>-->
-      </div>
     </div>
   </div>
 </header>

@@ -1,1 +1,12 @@
-<p>login-page works!</p>
+<div class="flex justify-center items-center h-screen w-full">
+  <p-card>
+    <header>
+      <h1 class="text-3xl font-bold text-center mb-4">Вход</h1>
+      <form class="flex flex-col items-center gap-4">
+          <input pInputText type="text" placeholder="Введите логин" [field]="_loginForm.login"/>
+          <input pInputText type="password" placeholder="Введите пароль" [field]="_loginForm.password"/>
+          <p-button severity="primary" [rounded]="true" label="Войти" (click)="_login()"/>
+      </form>
+    </header>
+  </p-card>
+</div>
