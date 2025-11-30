@@ -11,10 +11,12 @@ import { provideHttpClient } from '@angular/common/http';
 import { providePrimeNG } from 'primeng/config';
 import { Localization } from '@core/utils';
 import { MyPreset } from '@core/utils/customization';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideHttpClient(),
+    provideAnimations(), // нужно для работы библиотеки
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
     providePrimeNG({

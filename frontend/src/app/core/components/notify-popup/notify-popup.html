@@ -1,0 +1,17 @@
+<div class="flex flex-col min-w-[500px] max-h-[300px] overflow-y-auto">
+  <div class="w-full flex justify-between items-center pb-2">
+    <h2 class="text-xl font-bold" pBadge="1" [badgeStyle]="{backgroundColor: 'transparent', color: 'var(--primary)'}" >Уведомления</h2>
+    <a routerLink="/notifications" [queryParams]="{period: 'all'}" class="text-(--primary)">Просмотреть все</a>
+  </div>
+  <p-divider/>
+  <div class="flex justify-between items-start py-4 last:border-b-0 border-b border-(--card-border) gap-5">
+    <div class="flex flex-col items-start gap-2">
+      <p class="little-text text-(--pale-text)">Базы данных: SQL: Выборки разной сложности</p>
+      <p class="card-text">Задание зачтено</p>
+    </div>
+    <div class="flex flex-col items-end gap-2">
+      <p class="little-text text-(--pale-text)">1 час назад</p>
+      <a routerLink="/homeworks" [queryParams]="{workId: 2311}" class="card-text text-(--primary)!">Просмотреть</a>
+    </div>
+  </div>
+</div>

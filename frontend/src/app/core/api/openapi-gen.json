@@ -4,7 +4,6 @@
   "output": "./src/app/core/api/openapi",
   "prefix": "EDUApi",
   "includeTags": [],
-  "module": "EDUApiModule",
   "configuration": "EDUApiConfiguration",
   "ignoreUnusedModels": true,
   "minParamsForContainer": 2,

@@ -15,16 +15,22 @@
     <div class="flex items-center gap-2">
       <p-button icon="pi pi-bell" [rounded]="true" size="large"
                 [text]="true" severity="secondary" pBadge
-                badgeSeverity="danger" badgeSize="small" badge="1"/>
+                badgeSeverity="danger" badgeSize="small" badge="1"
+                (click)="op.toggle($event)"/>
+      <p-popover #op>
+        <app-notify-popup/>
+      </p-popover>
 
-      <div class="flex items-center gap-2 bg-(--chip-gray-bg) rounded-full p-2 hover:bg-(--chip-gray-bg-hover) cursor-pointer py-1.5 pl-2.5 pr-5">
+      <button (click)="menu.toggle($event)"
+              class="flex items-center gap-2 bg-(--chip-gray-bg) rounded-full p-2 hover:bg-(--chip-gray-bg-hover) cursor-pointer py-1.5 pl-2.5 pr-5">
         <div class="text-white bg-(--primary) rounded-full w-10 h-10 flex items-center justify-center">КЧ</div>
         <div class="profile-info">
           <div class="profile-name">Кирилл Черняев</div>
           <div class="text-(--pale-text)">Студент (4 курс)</div>
         </div>
+      </button>
+      <p-menu [popup]="true" [model]="_menuItems()" #menu/>
 
-      </div>
     </div>
   </div>
 </header>
