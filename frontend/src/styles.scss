@@ -1,4 +1,5 @@
 @use "tailwindcss";
+@use "primeicons/primeicons.css";
 
 @theme {
   // Цвета
@@ -13,7 +14,6 @@
   --text-color: #1f2a3c;
   --light-card-bg: #f7f9ff;
   --pill-blue-bg: #e3eeff;
-  --pill-blue-text: #0057ff;
   --pill-orange-bg: #fff3e8;
   --pill-orange-text: #ff8a3d;
   --pill-green-bg: #e9fff2;
@@ -23,7 +23,7 @@
 
   // Скругления - можно будет потом от них избавиться если tw такие будут, а они там должны быть
   --main-radius: 16px;
-  --insert-radius-cours: 14px;
+  --insert-radius-course: 14px;
   --insert-radius-task: 12px;
   --button-radius: 999px;
 
@@ -56,11 +56,11 @@
 }
 
 .active-route {
-  @apply bg-(--primary) text-white;
+  @apply text-(--primary) ;
 }
 
 .route-links {
-  @apply text-[0.875rem]  hover:bg-(--primary) hover:text-white transition-all rounded-(--button-radius) py-1.5 px-2.5;
+  @apply text-[0.875rem]  hover:text-(--primary) transition-all;
 }
 
 .my-gradient {

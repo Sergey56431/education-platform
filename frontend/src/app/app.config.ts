@@ -8,12 +8,26 @@ import { withNgxsStoragePlugin } from '@ngxs/storage-plugin';
 import { withNgxsWebSocketPlugin } from '@ngxs/websocket-plugin';
 import { provideStore } from '@ngxs/store';
 import { provideHttpClient } from '@angular/common/http';
+import { providePrimeNG } from 'primeng/config';
+import { Localization } from '@core/utils';
+import { MyPreset } from '@core/utils/customization';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideHttpClient(),
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
+    providePrimeNG({
+      translation: Localization,
+      theme: {
+        preset: MyPreset,
+        options: {
+          prefix: 'p',
+          darkModeSelector: false,
+          cssLayer: false
+        }
+      }
+    }),
     provideRouter(routes), provideStore(
       [],
       withNgxsReduxDevtoolsPlugin(),
